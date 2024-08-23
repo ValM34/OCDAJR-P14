@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+
+// FONTS
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+// COLORS
+$MUI-lightgray: #c4c4c4;
+$MUI-blue: #1976d2;
+$white: white;
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  display: block;
+}
+
+.address {
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  border: 1px solid $MUI-lightgray;
+  border-radius: 4px;
+
+  > legend {
+    padding: 0 8px;
+    color: darken($MUI-lightgray, 20%);
+    font-weight: 500;
+  }
+
+  > .personal-info-input-container:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
+.personal-info-input-container {
+  margin-top: 1rem;
+  margin-bottom: 10px;
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+
+.submit-button-center {
+  display: flex;
+  justify-content: center;
+}
+
+.main-layout-header {
+  padding: 20px 0;
+  border-bottom: 1px solid $MUI-lightgray;
+
+  .main-layout-title {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .main-layout-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    a {
+      text-decoration: none;
+      color: $MUI-blue;
+      padding: 10px 16px;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: $MUI-blue;
+        color: $white;
+
+      }
+    }
+  }
+}

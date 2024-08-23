@@ -1,0 +1,98 @@
+.VC-table-container {
+  width: 100%;
+  min-width: 500px;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  overflow-x: auto;
+  max-width: 1000px;
+}
+
+.VC-table-container table {
+  width: 100%;
+}
+
+.VC-table-container th {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  display: table-cell;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  text-align: left;
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.VC-table-container td {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  display: table-cell;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  text-align: left;
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.VC-table-container .configuration-table-items-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.VC-table-container select {
+  padding: 6.5px 14px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+}
+
+.VC-table-thead > tr > th {
+  font-weight: 600;
+}
+
+.VC-table-container input {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  padding: 16.5px 14px;
+}
+
+.VC-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.VC-pagination-buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.VC-pagination-buttons-container button {
+  padding: 6.5px 14px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.VC-pagination-buttons-container button:hover {
+  background-color: #f8f8f8;
+}
+
+.VC-table-empty {
+  padding: 10px;
+  font-weight: 600;
+}

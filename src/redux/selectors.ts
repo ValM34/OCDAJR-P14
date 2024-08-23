@@ -1,0 +1,2 @@
+// export const getUser = (state) => state.user.users
+export const getUser = (state: { user: { users: [{ firstName: string, lastName: string, startDate: string, department: string, dateOfBirth: string, street: string, city: string, state: string, zipCode: string }]; }; }) => state.user.users
